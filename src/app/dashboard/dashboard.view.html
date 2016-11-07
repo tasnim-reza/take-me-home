@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-sm-8" ng-controller="DashboardCtrl">
+        <h1>Weather Service Dashboard</h1>
+
+        <div class="row">
+            <div class="col-sm-12 slideanim">
+                <div class="row">
+                    <div class="col-sm-8 form-group">
+                        Pressure(hPa)
+                        <input class="form-control" ng-change="onPressureChange()" type="range" min="970" max="1030" ng-model="pressure">                        
+                    </div>
+                    <div class="col-sm-4 form-group">
+                        <div line-chart></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 slideanim">
+                <div class="row">
+                    <div class="col-sm-8 form-group">
+                        Temperature(C)
+                        <input class="form-control" ng-change="onTemperatureChange()" type="range" min="10" max="35" ng-model="temperature">                        
+                    </div>
+                    <div class="col-sm-4 form-group">
+                        <div bar-chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class=" text-center" d3-donut data="chartData" label="chartLabel" current-data-set="currentDataSet"></div>
+    </div>
+</div>

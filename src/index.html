@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" data-ng-app="app" ng-strict-di>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Finleap Test</title>
+	<link rel="shortcut icon" href="content/img/favicon.ico">
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="content/style.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top" menu>
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#home">
+					<img src="content/img/logo.svg" alt="Finleap logo">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navBar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#weather-details">Details</a></li>
+					<li><a href="#about">About</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid" ng-view>
+	</div>
+	<footer class="container-fluid text-center">
+		<p class="copy-right">&copy; 2016 Reza </p>
+	</footer>
+
+	<script src="../node_modules/ecstasy/src/ecstasy.js"></script>
+	<script src="../node_modules/angular/angular.min.js"></script>
+	<script src="../node_modules/angular-route/angular-route.min.js"></script>
+	<script src="../node_modules/d3/build/d3.min.js"></script>
+	<!--<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
+
+	<script src="app/core/core.module.js"></script>
+	<script src="app/core/constant.js"></script>
+	<script src="app/core/route.config.js"></script>
+
+	<script src="app/dashboard/dashboard.module.js"></script>
+	
+	<script src="app/dashboard/amount-of-rainfall-chart/bar-chart.directive.js"></script>
+	<script src="app/dashboard/chance-of-rain-chart/line-chart.directive.js"></script>
+	<script src="app/dashboard/chart-data-analyser.service.js"></script>
+	<script src="app/dashboard/dashboard.controller.js"></script>
+
+	<script src="app/layout/shell.module.js"></script>
+	<script src="app/layout/menu.directive.js"></script
+	>
+	<script src="app.module.js"></script>
+</body>
+
+</html>

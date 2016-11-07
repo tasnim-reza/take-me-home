@@ -1,0 +1,20 @@
+{
+  "name": "finleap",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "^1.5.0"    
+  },
+  "scripts": {   
+    "start": "http-server" 
+  },
+  "devDependencies": {  
+      "angular": "^1.5.8",
+      "angular-route": "^1.5.8",
+      "bootstrap": "^3.3.7",
+      "d3": "^4.2.3",
+      "http-server": "^0.9.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
